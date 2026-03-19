@@ -4,4 +4,4 @@ def print_last_digit(number):
         qaliq = number % 10
     else:
         qaliq = -10 + number % 10
-    return print(qaliq)
+    return print(qaliq, end="")
