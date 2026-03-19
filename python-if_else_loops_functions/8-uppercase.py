@@ -6,4 +6,4 @@ def uppercase(str):
             nev = nev + chr(ord(letter)-25)
         else:
             nev = nev + letter
-    return nev        
+    return print("{}".format(nev))   
