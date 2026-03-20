@@ -7,4 +7,4 @@ def print_matrix_integer(matrix=[[]]):
             else:
                 print("{:d}".format(row[i]), end=" ")
     if len(matrix) == 0:
-        print("")
+        print()
