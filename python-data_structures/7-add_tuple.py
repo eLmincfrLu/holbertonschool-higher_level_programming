@@ -26,3 +26,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     second = first_a2 + first_b2
     result = first, second
     return result
+
