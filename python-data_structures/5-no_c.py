@@ -7,4 +7,4 @@ def no_c(my_string):
             continue
         else:
             new_string += letter
-        return new_string
+    return new_string
