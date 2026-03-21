@@ -9,17 +9,21 @@ if __name__ == "__main__":
     first = argv[1]
     second = argv[3]
     if argv[2] == "+":
-        print("{} + {} = {}".format(first, second,
-                    add(int(first), int(second))))
+        print("{} + {} = {}".format(
+            first, second, add(int(first), int(second))
+    ))
     elif argv[2] == "-":
-        print("{} - {} = {}".format(first, second,
-                    sub(int(first), int(second))))
+        print("{} - {} = {}".format(
+            first, second, sub(int(first), int(second))
+        ))
     elif argv[2] == "*":
-        print("{} * {} = {}".format(first, second,
-                    mul(int(first), int(second))))
+        print("{} * {} = {}".format(
+            first, second, mul(int(first), int(second))
+        ))
     elif argv[2] == "/":
-        print("{} / {} = {}".format(first, second,
-                    div(int(first), int(second))))
+        print("{} / {} = {}".format(
+        first, second, div(int(first), int(second))
+        ))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
