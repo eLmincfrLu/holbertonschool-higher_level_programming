@@ -10,7 +10,7 @@ if __name__ == "__main__":
     second = sys.argv[3]
     if sys.argv[2] == "+":
         print("{} + {} = {}".format(first, second, add(int(first), int(second))))
-    elif sys.argv[2] == "":
+    elif sys.argv[2] == "-":
         print("{} - {} = {}".format(first, second, sub(int(first), int(second))))
     elif sys.argv[2] == "*":
         print("{} * {} = {}".format(first, second, mul(int(first), int(second))))
