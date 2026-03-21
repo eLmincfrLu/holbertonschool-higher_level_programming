@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-def print(str):
+def printin(str):
     print(str)
-print("#pythoniscool")
+printin("#pythoniscool")
