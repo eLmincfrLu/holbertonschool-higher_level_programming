@@ -6,12 +6,10 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(my_list[i]), end="")
             count += 1
-        except (ValueError, TypeError):
-            # integer olmayan elementləri atla
+        except TypeError:
             pass
         except IndexError:
-            # x list uzunluğunu keçirsə dayandır
             break
         i += 1
-    print()  # sonda newline
+    print()
     return count
