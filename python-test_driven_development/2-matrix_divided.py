@@ -2,17 +2,14 @@
 """Module that divides all elements of a matrix"""
 def matrix_divided(matrix, div):
     """Divide all elements of a matrix by div.
-
     Args:
         matrix (list): A list of lists of integers or floats.
         div (int/float): The divisor.
-
     Raises:
         TypeError: If matrix is not a list of lists of ints/floats.
         TypeError: If rows of the matrix are not the same size.
         TypeError: If div is not a number.
         ZeroDivisionError: If div is 0.
-
     Returns:
         A new matrix with the results of the division.
     """
