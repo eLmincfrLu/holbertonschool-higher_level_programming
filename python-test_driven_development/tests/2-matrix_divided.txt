@@ -38,3 +38,10 @@ Sonsuzluğa bölmə:
 -----------------
     >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
     [[0.0, 0.0], [0.0, 0.0]]
+
+Arqument çatışmazlığı:
+----------------------
+    >>> matrix_divided([[1, 2]])
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
