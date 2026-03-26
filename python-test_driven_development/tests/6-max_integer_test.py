@@ -48,5 +48,5 @@ class TestMaxInteger(unittest.TestCase):
         """Test with a list of negative numbers"""
         self.assertEqual(max_integer([-1, -5, -10, -2]), -1)
 
-    if __name__ == "__main__":
+    if __name__ == "__main__":  #obirisi fayli run eliyende bu islemesin deye burani yaziram
         unittest.main()
