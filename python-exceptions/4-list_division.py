@@ -8,7 +8,7 @@ def list_division(my_list_1, my_list_2, list_length):
         try:
             l1 = my_list_1[i]
             l2 = my_list_2[i]
-            result  = l1 / l2
+            result = l1 / l2
         except ZeroDivisionError:
             print("division by 0")
             result = 0
