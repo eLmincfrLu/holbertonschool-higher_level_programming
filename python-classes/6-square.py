@@ -29,7 +29,7 @@ class Square:
         """return the position""" 
         return self.__position
 
-    @size.setter
+    @position.setter
     def position(self, value):
         """to set the position"""
         if not isinstance(self.__position, tuple) or len(self.__position) != 2:
@@ -53,3 +53,7 @@ class Square:
                 for j in range(self.size):
                     print("#", end="")
                 print()
+
+
+my_square_1 = Square(3, (1, 1))
+my_square_1.my_print()
