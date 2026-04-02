@@ -45,14 +45,11 @@ class Square:
         """prINTS THE SQUARE"""
         if self.__size == 0:
             print()
-        else:
+            return
             for i in range(self.__position[1]):
                 print()
             for i in range(self.__size):
-                print(self.__position[0] * " ", end="")
-                for j in range(self.size):
-                    print("#", end="")
-                print()
+                print(" " * self.__position[0] + "#" * self.__size)
 
 
 my_square_1 = Square(3, (1, 1))
