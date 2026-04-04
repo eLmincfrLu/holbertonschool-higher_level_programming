@@ -6,6 +6,7 @@ class Rectangle:
     """Represent a rectangle class"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """initalize the attributes"""
@@ -55,7 +56,10 @@ class Rectangle:
         """represents the figure"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        return "\n".join("#" * self.__width for i in range(self.__height))
+        siyah= []
+        for i in range(self.height):
+            siyah.append(str(Rectangle.print_symbol) * self.__width)
+        return "\n".join(siyah)
 
     def __repr__(self):
         """convert object to string"""
