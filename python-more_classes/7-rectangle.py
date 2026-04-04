@@ -58,7 +58,7 @@ class Rectangle:
             return ""
         siyah= []
         for i in range(self.height):
-            siyah.append(str(Rectangle.print_symbol) * self.__width)
+            siyah.append(str(self.print_symbol) * self.__width)
         return "\n".join(siyah)
 
     def __repr__(self):
