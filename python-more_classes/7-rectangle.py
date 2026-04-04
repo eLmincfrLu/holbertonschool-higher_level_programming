@@ -56,7 +56,7 @@ class Rectangle:
         """represents the figure"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        siyah= []
+        siyah = []
         for i in range(self.height):
             siyah.append(str(self.print_symbol) * self.__width)
         return "\n".join(siyah)
