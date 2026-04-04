@@ -64,5 +64,3 @@ class Rectangle:
         """deletes the object"""
         print(f"Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
-    def 
