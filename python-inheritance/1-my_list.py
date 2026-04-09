@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Bu modul MyList klasını təqdim edir.
+This module defines a class MyList that inherits from list.
 """
 
 
 class MyList(list):
-    """Siyahıdan miras alan klas."""
+    """A subclass of list that provides a sorted printing method."""
 
     def print_sorted(self):
-        """Siyahını sıralanmış şəkildə çap edir."""
+        """Prints the list in ascending order without modifying the original."""
         print(sorted(self))
