@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""class"""
+"""
+Bu modul MyList klasını təqdim edir.
+"""
 
 
 class MyList(list):
-    """A class"""
+    """Siyahıdan miras alan klas."""
 
     def print_sorted(self):
-        """return sorted list"""
+        """Siyahını sıralanmış şəkildə çap edir."""
         print(sorted(self))
