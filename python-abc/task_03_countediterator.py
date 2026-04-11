@@ -10,6 +10,6 @@ class CountedIterator:
     def __next__(self):
         a = next(self.iterator)
         self.counter += 1
-
+        return a
     def get_count(self):
         return self.counter
