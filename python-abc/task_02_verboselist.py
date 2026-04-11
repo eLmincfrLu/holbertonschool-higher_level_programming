@@ -19,4 +19,4 @@ class VerboseList(list):
     def pop(self, index = -1):
         d = self[index]
         super().pop(index)
-        print("Popped [{}] from the list.".format())
+        print("Popped [{}] from the list.".format(d))
