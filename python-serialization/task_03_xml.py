@@ -1,36 +1,34 @@
+#!/usr/bin/python3
+"""fvbnm"""
 import xml.etree.ElementTree as ET
 
 
 def serialize_to_xml(dictionary, filename):
+    """fghj"""
     root = ET.Element("data")
 
     for key, value in dictionary.items():
-        item = ET.SubElement(root, "item")
-
-        key_element = ET.SubElement(item, "key")
-        key_element.text = str(key)
-
-        value_element = ET.SubElement(item, "value")
-        value_element.text = str(value)
-
+        child = ET.SubElement(root, key)
+        child.text = str(value)
     tree = ET.ElementTree(root)
-    tree.write(filename, encoding="utf-8", xml_declaration=True)
+    try:
+        tree.write(filename, encoding="utf-8", xml_declaration=True)
+    except Exception:
+        return False
 
 
 def deserialize_from_xml(filename):
-    tree = ET.parse(filename)
-    root = tree.getroot()
+    """dfghjm"""
+    try:
+        tree = ET.parse(filename)
+        root = tree.getroot()
 
-    result = {}
+        deserialized_dict = {}
+        for child in root:
+            deserialized_dict[child.tag] = child.text
 
-    for item in root.findall("item"):
-        key = item.find("key").text
-        value = item.find("value").text
-
-        # sadə type conversion
-        if value.isdigit():
-            value = int(value)
-
-        result[key] = value
-
-    return result
+        return deserialized_dict
+    except FileNotFoundError:
+        return None
+    except Exception:
+        return None
