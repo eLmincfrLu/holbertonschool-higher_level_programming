@@ -5,6 +5,13 @@ save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
 load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 
-with open("add_item.json", "w", encoding="utf-8") as f:
-    for i in sys.argv:
-        save_to_json_file(i, f)
+file = "add_item.json"
+try:
+    items = load_from_json_file(file)
+except Exception:
+      items = []
+
+for i in sys.argv[1:]:
+        items.append(i)
+
+save_to_json_file(items, file)
