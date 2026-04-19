@@ -28,6 +28,6 @@ class CustomObject:
         try:
             with open(filename, "rb") as f:
                 data = pickle.load(f)
-                return None
+                return data
         except Exception:
             return None
