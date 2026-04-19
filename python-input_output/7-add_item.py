@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-"""aadsd"""
+"""Ad"""
 import sys
-save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-file = "add_item.json"
+filename = "add_item.json"
+
 try:
-    items = load_from_json_file(file)
+    items = load_from_json_file(filename)
 except Exception:
-      items = []
+    items = []
+
 for i in sys.argv[1:]:
-        items.append(i)
-save_to_json_file(items, file)
+    items.append(i)
+
+save_to_json_file(items, filename)
